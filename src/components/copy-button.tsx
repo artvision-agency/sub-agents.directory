@@ -18,7 +18,7 @@ export function CopyButton({
     navigator.clipboard.writeText(content);
     setCopied(true);
     toast(
-      "Copied to clipboard. Add a .windsurfrules file to your project and paste the rule.",
+      "Copied to clipboard. Add to your CLAUDE.md file or sub-agent configuration.",
     );
 
     setTimeout(() => {

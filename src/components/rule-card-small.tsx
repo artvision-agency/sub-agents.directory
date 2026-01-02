@@ -61,11 +61,9 @@ export function RuleCardSmall({
       </CardContent>
 
       <CardHeader className="p-0 space-y-1">
-        <div className="flex items-center justify-between">
-          <CardTitle className={cn("truncate", small ? "text-xs" : "text-sm")}>
-            {rule.title || rule.author?.name}
-          </CardTitle>
-        </div>
+        <CardTitle className={cn("truncate", small ? "text-xs" : "text-sm")}>
+          {rule.title}
+        </CardTitle>
         {rule.libs && rule.libs.length > 0 && (
           <Popover>
             <PopoverTrigger

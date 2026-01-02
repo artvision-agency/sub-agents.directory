@@ -3,9 +3,9 @@ import { getSections } from "@/data/rules";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Windsurf Directory - Windsurf Rules & MCP Servers",
+  title: "Sub-Agents Directory - Claude Code Sub-Agents & MCP Servers",
   description:
-    "Enhance your Windsurf with custom rules, find MCP servers, and join a community of Windsurf enthusiasts.",
+    "Discover Claude Code sub-agent prompts, find MCP servers, and join the community.",
 };
 
 export default function Page() {

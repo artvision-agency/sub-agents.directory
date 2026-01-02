@@ -20,7 +20,7 @@ export async function GET(request: Request) {
       await supabase
           .from("users")
           .update({
-            source: "windsurf",
+            source: "sub-agents",
           })
           .eq("id", data.user.id)
           .select();

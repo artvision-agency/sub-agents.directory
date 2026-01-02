@@ -1,32 +1,14 @@
 "use server";
 
- import { getSession } from "@/utils/supabase/auth";
+import { getSession } from "@/utils/supabase/auth";
 import { xai } from "@ai-sdk/xai";
-import { Ratelimit } from "@upstash/ratelimit";
-import { Redis } from "@upstash/redis";
 import { smoothStream, streamText } from "ai";
 import { createStreamableValue } from "ai/rsc";
-
-const redis = new Redis({
-  url: process.env.UPSTASH_REDIS_REST_URL!,
-  token: process.env.UPSTASH_REDIS_REST_TOKEN!,
-});
-
-const ratelimit = new Ratelimit({
-  redis,
-  limiter: Ratelimit.slidingWindow(5, "1m"),
-});
 
 export async function generateRule(dependencies: string) {
   const session = await getSession();
   if (!session?.user) {
     throw new Error("Authentication required");
-  }
-
-  const { success } = await ratelimit.limit("api_calls");
-
-  if (!success) {
-    throw new Error("Too many requests. Please try again later.");
   }
 
   const stream = createStreamableValue("");

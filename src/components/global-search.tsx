@@ -2,6 +2,7 @@
 
 import type { Section } from "@/data/rules";
 import { motion } from "motion/react";
+import { Suspense } from "react";
 import { GlobalSearchInput } from "./global-search-input";
 import { HeroTitle } from "./hero-title";
 import MCPList from "./mcp-list";
@@ -26,7 +27,9 @@ export function GlobalSearch({ sections }: { sections: Section[] }) {
           <HeroTitle />
 
           <div className="max-w-[620px] mx-auto w-full mb-14">
-            <GlobalSearchInput />
+            <Suspense fallback={<div className="h-[60px] bg-[#121212] border border-[#2C2C2C]" />}>
+              <GlobalSearchInput />
+            </Suspense>
           </div>
 
           <motion.div
@@ -43,7 +46,9 @@ export function GlobalSearch({ sections }: { sections: Section[] }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
           >
-            <RuleList sections={sections} small />
+            <Suspense fallback={null}>
+              <RuleList sections={sections} small />
+            </Suspense>
           </motion.div>
         </div>
       </div>

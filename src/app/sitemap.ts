@@ -2,7 +2,7 @@ import type { MCP } from '@/data/mcp'
 import { getSections } from '@/data/rules'
 import type { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://windsurf.run'
+const BASE_URL = 'https://sub-agents.directory'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Get all rules sections

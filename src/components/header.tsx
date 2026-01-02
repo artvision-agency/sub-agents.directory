@@ -26,7 +26,7 @@ export function Header() {
     <div className="flex justify-between items-center">
       <div className="md:fixed z-50 flex justify-between items-center top-0 px-6 py-2 w-full bg-background backdrop-filter backdrop-blur-sm bg-opacity-30">
         <Link href="/" className="font-medium font-fraunces text-sm">
-          windsurf.run
+          sub-agents.directory
         </Link>
 
         <div className="hidden md:flex items-center gap-5">
@@ -36,9 +36,7 @@ export function Header() {
               href={link.href}
               className={cn(
                 "flex items-center gap-2 text-sm font-medium",
-                pathname.includes(link.href)
-                  ? "text-primary"
-                  : "text-[#878787]",
+                pathname.includes(link.href) ? "text-primary" : "text-[#878787]"
               )}
             >
               {link.label}

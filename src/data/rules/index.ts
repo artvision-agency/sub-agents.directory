@@ -194,11 +194,6 @@ export interface Rule {
   tags: string[];
   libs: string[];
   content: string;
-  author?: {
-    name: string;
-    url: string | null;
-    avatar: string | null;
-  };
 }
 
 export type Section = {

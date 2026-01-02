@@ -1,7 +1,7 @@
 "use client";
 
 export function HeroTitle() {
-  const text = "Discover windsurf rules, mcp servers and more";
+  const text = "Discover Claude Code sub-agents, prompts and more";
 
   return (
     <div className="text-center mb-8">
@@ -22,14 +22,14 @@ export function HeroTitle() {
           animation: "fadeIn 0.2s ease forwards 0.1s",
         }}
       >
-        Explore a curated collection of rules and MCP servers. <br />
+        Explore a curated collection of sub-agent prompts and MCP servers. <br />
         <a
           className="border-b border-border border-dashed"
-          href="https://windsurf.ai?utm_source=windsurf.run"
+          href="https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview"
           target="_blank"
           rel="noreferrer"
         >
-          Not on Windsurf? Learn more here.
+          New to Claude Code? Learn more here.
         </a>
       </p>
       <style jsx>{`

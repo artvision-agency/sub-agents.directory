@@ -1,11 +1,10 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { cn, generateNameAbbr, isImageUrl } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import type { Rule } from "@/data/rules";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
@@ -34,25 +33,7 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
       </CardContent>
 
       <CardHeader className="p-0 space-y-1">
-        <div className="flex items-center justify-between">
-          <CardTitle className="text-sm">{rule.author?.name}</CardTitle>
-          {rule.author?.url && (
-            <a href={rule.author.url} target="_blank" rel="noopener noreferrer">
-              <Avatar className="size-6">
-                {rule.author.avatar && isImageUrl(rule.author.avatar) ? (
-                  <AvatarImage
-                    src={rule.author.avatar}
-                    alt={rule.author.name}
-                  />
-                ) : (
-                  <AvatarFallback>
-                    {generateNameAbbr(rule.author.name)}
-                  </AvatarFallback>
-                )}
-              </Avatar>
-            </a>
-          )}
-        </div>
+        <CardTitle className="text-sm">{rule.title}</CardTitle>
         {rule.libs && rule.libs.length > 0 && (
           <Popover>
             <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">

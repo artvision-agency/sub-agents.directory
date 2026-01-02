@@ -19,8 +19,8 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Windsurf Directory",
-  description: "Find the best windsurf rules for your framework and language",
+  title: "Sub-Agents Directory",
+  description: "Find the best Claude Code sub-agent prompts for your framework and language",
   icons: [
     {
       rel: "icon",
@@ -28,39 +28,15 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: "Windsurf Directory",
-    description: "Find the best windsurf rules for your framework and language",
-    url: "https://windsurf.directory",
+    title: "Sub-Agents Directory",
+    description: "Find the best Claude Code sub-agent prompts for your framework and language",
+    url: "https://sub-agents.directory",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/opengraph-image-windsurf.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/opengraph-image-windsurf.png",
-        width: 1800,
-        height: 1600,
-      },
-    ],
   },
   twitter: {
-    title: "Windsurf Directory",
-    description: "Find the best windsurf rules for your framework and language",
-    images: [
-      {
-        url: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/opengraph-image-windsurf.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://pub-abe1cd4008f5412abb77357f87d7d7bb.r2.dev/opengraph-image-windsurf.png",
-        width: 1800,
-        height: 1600,
-      },
-    ],
+    title: "Sub-Agents Directory",
+    description: "Find the best Claude Code sub-agent prompts for your framework and language",
   },
 };
 
@@ -101,7 +77,7 @@ export default function RootLayout({
           <NuqsAdapter>{children}</NuqsAdapter>
 
           <a
-            href="https://github.com/pontusab/cursor.directory"
+            href="https://github.com/anthropics/claude-code"
             target="_blank"
             rel="noreferrer"
           >
@@ -116,14 +92,14 @@ export default function RootLayout({
 
           <Banner />
           <Toaster />
+
+          <OpenPanelComponent
+            clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!}
+            trackScreenViews
+            disabled={process.env.NODE_ENV === "development"}
+          />
         </ThemeProvider>
       </body>
-
-      <OpenPanelComponent
-        clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!}
-        trackScreenViews
-        disabled={process.env.NODE_ENV === "development"}
-      />
     </html>
   );
 }

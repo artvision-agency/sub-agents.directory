@@ -1,4 +1,19 @@
-export const HowTo = () => {
+import { CodeBlock } from "./code-block";
+
+const exampleConfig = `{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/path/to/allowed/files"
+      ]
+    }
+  }
+}`;
+
+export function HowTo() {
   return (
     <div className="p-6 border-2 border-dashed border-border container px-4 py-8 max-w-2xl mx-auto my-8">
       <h1 className="text-2xl mb-6">How to Use Model Context Protocol (MCP) in Claude Code</h1>
@@ -37,20 +52,7 @@ export const HowTo = () => {
         <div className="space-y-4">
           <div>
             <h3 className="font-medium mb-2">Filesystem Server Example:</h3>
-            <pre className="p-4 block text-[#878787] font-mono border border-border text-sm overflow-x-auto">
-              {`{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/path/to/allowed/files"
-      ]
-    }
-  }
-}`}
-            </pre>
+            <CodeBlock code={exampleConfig} />
           </div>
         </div>
       </section>
@@ -65,6 +67,6 @@ export const HowTo = () => {
       </section>
     </div>
   );
-};
+}
 
 export default HowTo;

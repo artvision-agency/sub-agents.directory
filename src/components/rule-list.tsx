@@ -12,19 +12,16 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
   const [search] = useQueryState("q");
   const [visibleItems, setVisibleItems] = useState(ITEMS_PER_PAGE);
 
-  // Reset visible items when search changes
   useEffect(() => {
     setVisibleItems(ITEMS_PER_PAGE);
   }, [search]);
 
-  // Handle hash scroll on mount and hash change
   useEffect(() => {
     const scrollToHash = () => {
       const hash = decodeURIComponent(window.location.hash.slice(1));
       if (!hash) return;
 
-      // Find which section index this hash corresponds to
-      const sectionIndex = sections.findIndex((s) => s.tag === hash);
+      const sectionIndex = sections.findIndex((s) => s.slug === hash);
       if (sectionIndex === -1) return;
 
       // Make sure enough items are visible
@@ -32,7 +29,6 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
         setVisibleItems(sectionIndex + 1);
       }
 
-      // Wait for render then scroll
       setTimeout(() => {
         const element = document.getElementById(hash);
         if (element) {
@@ -78,7 +74,7 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
   return (
     <>
       {filteredSections.slice(0, visibleItems).map((section) => (
-        <section key={section.tag} id={section.tag}>
+        <section key={section.slug} id={section.slug}>
           <h3 className="text-lg font-regular mb-4">{section.tag}</h3>
           <div
             className={`grid grid-cols-1 gap-6 mb-8 ${

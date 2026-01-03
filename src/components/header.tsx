@@ -12,7 +12,7 @@ import { Button } from "./ui/button";
 import { UserMenu } from "./user-menu";
 
 const navigationLinks = [
-  { href: "/rules", label: "Agents" },
+  { href: "/agents", label: "Agents" },
   { href: "/mcp", label: "MCPs" },
   { href: "/learn", label: "Learn" },
   { href: "/about", label: "About" },

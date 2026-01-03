@@ -10,9 +10,9 @@ import { useRouter } from "next/navigation";
 export function Menu({ sections }: { sections: Section[] }) {
   const router = useRouter();
 
-  const handleClick = (tag: string) => {
-    if (window.location.pathname === "/rules") {
-      const element = document.getElementById(tag);
+  const handleClick = (section: Section) => {
+    if (window.location.pathname === "/agents") {
+      const element = document.getElementById(section.slug);
       if (element) {
         window.scrollTo({
           top: element.offsetTop - 56,
@@ -20,7 +20,7 @@ export function Menu({ sections }: { sections: Section[] }) {
         });
       }
     } else {
-      router.push(`/rules#${encodeURIComponent(tag)}`);
+      router.push(`/agents#${section.slug}`);
     }
   };
 
@@ -30,7 +30,7 @@ export function Menu({ sections }: { sections: Section[] }) {
         <div className="space-y-1">
           {sections.map((section) => (
             <Button
-              onClick={() => handleClick(section.tag)}
+              onClick={() => handleClick(section)}
               key={section.tag}
               variant="ghost"
               className="w-full justify-start"

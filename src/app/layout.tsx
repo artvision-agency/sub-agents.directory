@@ -3,13 +3,13 @@ import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
-import { OpenPanelComponent } from "@openpanel/nextjs";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import { PlusIcon } from "lucide-react";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Fraunces } from "next/font/google";
+import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 const fraunces = Fraunces({
@@ -86,13 +86,8 @@ export default function RootLayout({
           </a>
 
           <Toaster />
-
-          <OpenPanelComponent
-            clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!}
-            trackScreenViews
-            disabled={process.env.NODE_ENV === "development"}
-          />
         </ThemeProvider>
+        <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
       </body>
     </html>
   );

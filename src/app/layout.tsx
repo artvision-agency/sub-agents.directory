@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Header } from "@/components/header";
+import { Banner } from "@/components/banner";
 import { Button } from "@/components/ui/button";
 import { rules } from "@/data/rules";
 import { Toaster } from "@/components/ui/sonner";
@@ -87,6 +88,7 @@ export default function RootLayout({
             </Button>
           </a>
 
+          <Banner />
           <Toaster />
         </ThemeProvider>
       </body>

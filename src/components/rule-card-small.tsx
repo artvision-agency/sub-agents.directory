@@ -5,6 +5,7 @@ import type { Rule } from "@/data/rules/types";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { CopyButton } from "./copy-button";
+import { DownloadButton } from "./download-button";
 import { ShareButton } from "./share-button";
 
 export function RuleCardSmall({
@@ -36,8 +37,9 @@ export function RuleCardSmall({
             small ? "right-2 bottom-2" : "right-4 bottom-4",
           )}
         >
-          <ShareButton slug={rule.slug} small={small} />
+          {!small && <ShareButton slug={rule.slug} small={small} />}
           <CopyButton content={rule.content} small={small} />
+          {!small && <DownloadButton content={rule.content} filename={rule.slug} small={small} />}
         </div>
 
         <Link href={`/${rule.slug}`}>

@@ -51,9 +51,11 @@ async function copyDirectory(src: string, dest: string): Promise<number> {
       await mkdir(destPath, { recursive: true });
       count += await copyDirectory(srcPath, destPath);
     } else if (entry.name.endsWith(".md") && entry.name !== "README.md") {
-      const content = await readFile(srcPath, "utf-8");
-      await writeFile(destPath, content);
-      count++;
+      if (!existsSync(destPath)) {
+        const content = await readFile(srcPath, "utf-8");
+        await writeFile(destPath, content);
+        count++;
+      }
     }
   }
 
@@ -64,9 +66,7 @@ async function syncContent(): Promise<void> {
   const extractedPath = await cloneRepo();
   const commitSha = getLatestCommit();
 
-  if (existsSync(LOCAL_CONTENT_PATH)) {
-    await rm(LOCAL_CONTENT_PATH, { recursive: true });
-  }
+  // Create content directory if it doesn't exist (don't delete existing)
   await mkdir(LOCAL_CONTENT_PATH, { recursive: true });
 
   await copyDirectory(extractedPath, LOCAL_CONTENT_PATH);

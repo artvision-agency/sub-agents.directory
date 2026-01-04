@@ -11,7 +11,8 @@
     "lint:fix": "oxlint --fix",
     "format": "oxfmt --write",
     "format:check": "oxfmt --check",
-    "sync": "bun run scripts/sync-upstream.ts"
+    "sync": "bun run scripts/sync-upstream.ts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@ai-sdk/xai": "^1.1.9",
@@ -54,6 +55,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint-plugin-oxlint": "^1.36.0",
+    "husky": "^9.1.7",
     "oxc-parser": "^0.106.0",
     "oxc-resolver": "^11.16.2",
     "oxc-transform": "^0.106.0",

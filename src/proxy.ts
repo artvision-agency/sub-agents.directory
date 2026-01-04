@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
 
-export function middleware(_request: NextRequest) {
+export function proxy(_request: NextRequest) {
   const response = NextResponse.next();
 
   response.headers.set("X-DNS-Prefetch-Control", "on");
@@ -30,14 +30,6 @@ export function middleware(_request: NextRequest) {
 
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     * - public files (robots.txt, manifest.json, etc.)
-     */
     "/((?!api|_next/static|_next/image|favicon.ico|.*\\..*|robots\\.txt|manifest\\.json|sitemap\\.xml).*)",
   ],
 };

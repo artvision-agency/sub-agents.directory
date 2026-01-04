@@ -47,11 +47,15 @@ Open [http://localhost:3000](http://localhost:3000) to view the directory.
 
 ## Contributing
 
-Content is synced from [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents). To add a new sub-agent:
+We welcome contributions! To add a new sub-agent:
 
-### 1. Fork the Upstream Repo
+### 1. Fork & Clone
 
-Fork [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) and clone it locally.
+```bash
+git clone https://github.com/YOUR_USERNAME/sub-agents.directory.git
+cd sub-agents.directory
+bun install
+```
 
 ### 2. Create a Rule File
 
@@ -64,8 +68,10 @@ content/
 ├── 03-infrastructure/
 ├── 04-quality-security/
 ├── 05-data-ai/
+├── 06-developer-experience/
 ├── 07-specialized-domains/
 ├── 08-business-product/
+├── 09-meta-orchestration/
 └── 10-research-analysis/
 ```
 
@@ -85,7 +91,7 @@ Your agent instructions go here...
 
 ### 4. Submit a PR
 
-Open a pull request to the upstream repository. Once merged, it will automatically sync to this directory.
+Open a pull request to this repository. We'll review and merge it!
 
 ## Tech Stack
 

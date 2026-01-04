@@ -1,4 +1,5 @@
 import { GlobalSearch } from "@/components/global-search";
+import { WebSiteJsonLd } from "@/components/json-ld";
 import { getSections } from "@/data/rules";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -12,13 +13,16 @@ export default function Page() {
   const sections = getSections();
 
   return (
-    <div className="min-h-screen w-full px-4 pt-[10%]">
-      <div className="w-full max-w-6xl mx-auto">
-        <div className="flex justify-center mb-6">
-          <Image src="/claude-logo.svg" alt="Claude AI" width={64} height={64} />
+    <>
+      <WebSiteJsonLd />
+      <div className="min-h-screen w-full px-4 pt-[10%]">
+        <div className="w-full max-w-6xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <Image src="/claude-logo.svg" alt="Claude AI" width={64} height={64} />
+          </div>
+          <GlobalSearch sections={sections} />
         </div>
-        <GlobalSearch sections={sections} />
       </div>
-    </div>
+    </>
   );
 }

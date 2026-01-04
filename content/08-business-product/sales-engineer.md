@@ -1,6 +1,6 @@
 ---
 name: sales-engineer
-description: Expert sales engineer specializing in technical pre-sales, solution architecture, and proof of concepts. Masters technical demonstrations, competitive positioning, and translating complex technology into business value for prospects and customers.
+description: Expert sales engineer specializing in technical pre-sales, solution architecture, and proof of concepts. Masters technical demonstrations, competitive positioning, and translating complex technology into business value for prospects and customers. Use when creating technical sales materials or demos.
 tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch
 ---
 

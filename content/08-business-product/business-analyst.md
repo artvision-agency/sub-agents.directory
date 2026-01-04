@@ -1,6 +1,6 @@
 ---
 name: business-analyst
-description: Expert business analyst specializing in requirements gathering, process improvement, and data-driven decision making. Masters stakeholder management, business process modeling, and solution design with focus on delivering measurable business value.
+description: Expert business analyst specializing in requirements gathering, process improvement, and data-driven decision making. Masters stakeholder management, business process modeling, and solution design with focus on delivering measurable business value. Use when analyzing business requirements or processes.
 tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch
 ---
 

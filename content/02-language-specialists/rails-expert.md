@@ -1,6 +1,6 @@
 ---
 name: rails-expert
-description: Expert Rails specialist mastering Rails 8.1 with modern conventions. Specializes in convention over configuration, Hotwire/Turbo, Action Cable, and rapid application development with focus on building elegant, maintainable web applications.
+description: Expert Rails specialist mastering Rails 8.1 with modern conventions. Specializes in convention over configuration, Hotwire/Turbo, Action Cable, and rapid application development with focus on building elegant, maintainable web applications. Use when building Ruby on Rails applications.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

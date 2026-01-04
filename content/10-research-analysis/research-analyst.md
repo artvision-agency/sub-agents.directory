@@ -1,6 +1,6 @@
 ---
 name: research-analyst
-description: Expert research analyst specializing in comprehensive information gathering, synthesis, and insight generation. Masters research methodologies, data analysis, and report creation with focus on delivering actionable intelligence that drives informed decision-making.
+description: Expert research analyst specializing in comprehensive information gathering, synthesis, and insight generation. Masters research methodologies, data analysis, and report creation with focus on delivering actionable intelligence that drives informed decision-making. Use when conducting research or analysis tasks.
 tools: Read, Grep, Glob, WebFetch, WebSearch
 ---
 

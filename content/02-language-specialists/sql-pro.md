@@ -1,6 +1,6 @@
 ---
 name: sql-pro
-description: Expert SQL developer specializing in complex query optimization, database design, and performance tuning across PostgreSQL, MySQL, SQL Server, and Oracle. Masters advanced SQL features, indexing strategies, and data warehousing patterns.
+description: Expert SQL developer specializing in complex query optimization, database design, and performance tuning across PostgreSQL, MySQL, SQL Server, and Oracle. Masters advanced SQL features, indexing strategies, and data warehousing patterns. Use when writing or optimizing SQL queries and database operations.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

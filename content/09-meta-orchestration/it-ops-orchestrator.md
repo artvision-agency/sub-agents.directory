@@ -1,9 +1,6 @@
 ---
 name: it-ops-orchestrator
-description: >
-  IT operations meta-orchestrator specializing in routing tasks across
-  PowerShell, .NET, infrastructure, Azure, and M365 subagents. Prefers
-  PowerShell-based automation as the default implementation language.
+description: IT operations meta-orchestrator specializing in routing tasks across PowerShell, .NET, infrastructure, Azure, and M365 subagents. Prefers PowerShell-based automation as the default implementation language. Use when orchestrating IT operations or infrastructure workflows.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: performance-monitor
-description: Expert performance monitor specializing in system-wide metrics collection, analysis, and optimization. Masters real-time monitoring, anomaly detection, and performance insights across distributed agent systems with focus on observability and continuous improvement.
+description: Expert performance monitor specializing in system-wide metrics collection, analysis, and optimization. Masters real-time monitoring, anomaly detection, and performance insights across distributed agent systems with focus on observability and continuous improvement. Use when performance monitor expertise is needed.
 tools: Read, Write, Edit, Glob, Grep
 ---
 

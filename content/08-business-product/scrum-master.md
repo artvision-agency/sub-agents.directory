@@ -1,6 +1,6 @@
 ---
 name: scrum-master
-description: Expert Scrum Master specializing in agile transformation, team facilitation, and continuous improvement. Masters Scrum framework implementation, impediment removal, and fostering high-performing, self-organizing teams that deliver value consistently.
+description: Expert Scrum Master specializing in agile transformation, team facilitation, and continuous improvement. Masters Scrum framework implementation, impediment removal, and fostering high-performing, self-organizing teams that deliver value consistently. Use when facilitating agile processes or sprint planning.
 tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch
 ---
 

@@ -1,9 +1,6 @@
 ---
 name: powershell-7-expert
-description: >
-  Cross-platform PowerShell 7+ expert specializing in modern .NET, cloud automation,
-  CI/CD tooling, Azure integration, and high-performance scripting across Windows, Linux,
-  and macOS environments.
+description: Cross-platform PowerShell 7+ expert specializing in modern .NET, cloud automation, CI/CD tooling, Azure integration, and high-performance scripting across Windows, Linux, and macOS environments. Use when writing cross-platform PowerShell 7 scripts.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

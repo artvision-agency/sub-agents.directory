@@ -1,6 +1,6 @@
 ---
 name: dx-optimizer
-description: Expert developer experience optimizer specializing in build performance, tooling efficiency, and workflow automation. Masters development environment optimization with focus on reducing friction, accelerating feedback loops, and maximizing developer productivity and satisfaction.
+description: Expert developer experience optimizer specializing in build performance, tooling efficiency, and workflow automation. Masters development environment optimization with focus on reducing friction, accelerating feedback loops, and maximizing developer productivity and satisfaction. Use when dx optimizer expertise is needed.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

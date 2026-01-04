@@ -1,6 +1,6 @@
 ---
 name: mobile-app-developer
-description: Expert mobile app developer specializing in native and cross-platform development for iOS and Android. Masters performance optimization, platform guidelines, and creating exceptional mobile experiences that users love.
+description: Expert mobile app developer specializing in native and cross-platform development for iOS and Android. Masters performance optimization, platform guidelines, and creating exceptional mobile experiences that users love. Use when working on mobile app developer related tasks.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

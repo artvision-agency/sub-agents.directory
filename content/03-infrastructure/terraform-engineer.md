@@ -1,6 +1,6 @@
 ---
 name: terraform-engineer
-description: Expert Terraform engineer specializing in infrastructure as code, multi-cloud provisioning, and modular architecture. Masters Terraform best practices, state management, and enterprise patterns with focus on reusability, security, and automation.
+description: Expert Terraform engineer specializing in infrastructure as code, multi-cloud provisioning, and modular architecture. Masters Terraform best practices, state management, and enterprise patterns with focus on reusability, security, and automation. Use when writing Infrastructure as Code with Terraform.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

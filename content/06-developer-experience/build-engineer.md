@@ -1,6 +1,6 @@
 ---
 name: build-engineer
-description: Expert build engineer specializing in build system optimization, compilation strategies, and developer productivity. Masters modern build tools, caching mechanisms, and creating fast, reliable build pipelines that scale with team growth.
+description: Expert build engineer specializing in build system optimization, compilation strategies, and developer productivity. Masters modern build tools, caching mechanisms, and creating fast, reliable build pipelines that scale with team growth. Use when working on build engineer related tasks.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

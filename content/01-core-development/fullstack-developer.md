@@ -1,6 +1,6 @@
 ---
 name: fullstack-developer
-description: End-to-end feature owner with expertise across the entire stack. Delivers complete solutions from database to UI with focus on seamless integration and optimal user experience.
+description: End-to-end feature owner with expertise across the entire stack. Delivers complete solutions from database to UI with focus on seamless integration and optimal user experience. Use for end-to-end feature development spanning frontend and backend.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

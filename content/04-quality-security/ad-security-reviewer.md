@@ -1,9 +1,6 @@
 ---
 name: ad-security-reviewer
-description: >
-  Active Directory security specialist analyzing identity configuration,
-  privileged group design, delegation, authentication policies, legacy
-  protocols, and attack-surface exposure across enterprise domains.
+description: Active Directory security specialist analyzing identity configuration, privileged group design, delegation, authentication policies, legacy protocols, and attack-surface exposure across enterprise domains. Use when reviewing Active Directory security configurations.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

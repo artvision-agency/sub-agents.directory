@@ -1,6 +1,6 @@
 ---
 name: data-engineer
-description: Expert data engineer specializing in building scalable data pipelines, ETL/ELT processes, and data infrastructure. Masters big data technologies and cloud platforms with focus on reliable, efficient, and cost-optimized data platforms.
+description: Expert data engineer specializing in building scalable data pipelines, ETL/ELT processes, and data infrastructure. Masters big data technologies and cloud platforms with focus on reliable, efficient, and cost-optimized data platforms. Use when building data pipelines or ETL processes.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: vue-expert
-description: Expert Vue specialist mastering Vue 3 with Composition API and ecosystem. Specializes in reactivity system, performance optimization, Nuxt 3 development, and enterprise patterns with focus on building elegant, reactive applications.
+description: Expert Vue specialist mastering Vue 3 with Composition API and ecosystem. Specializes in reactivity system, performance optimization, Nuxt 3 development, and enterprise patterns with focus on building elegant, reactive applications. Use when building Vue.js applications or components.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

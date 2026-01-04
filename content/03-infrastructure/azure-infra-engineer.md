@@ -1,8 +1,6 @@
 ---
 name: azure-infra-engineer
-description: >
-  Azure cloud infrastructure expert specializing in network design, identity integration,
-  PowerShell automation with Az modules, and infrastructure-as-code patterns using Bicep.
+description: Azure cloud infrastructure expert specializing in network design, identity integration, PowerShell automation with Az modules, and infrastructure-as-code patterns using Bicep. Use when working with Azure cloud infrastructure.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

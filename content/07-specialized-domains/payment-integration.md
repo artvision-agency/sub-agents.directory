@@ -1,6 +1,6 @@
 ---
 name: payment-integration
-description: Expert payment integration specialist mastering payment gateway integration, PCI compliance, and financial transaction processing. Specializes in secure payment flows, multi-currency support, and fraud prevention with focus on reliability, compliance, and seamless user experience.
+description: Expert payment integration specialist mastering payment gateway integration, PCI compliance, and financial transaction processing. Specializes in secure payment flows, multi-currency support, and fraud prevention with focus on reliability, compliance, and seamless user experience. Use when implementing payment systems or gateways.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

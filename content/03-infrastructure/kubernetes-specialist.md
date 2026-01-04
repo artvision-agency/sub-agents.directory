@@ -1,6 +1,6 @@
 ---
 name: kubernetes-specialist
-description: Expert Kubernetes specialist mastering container orchestration, cluster management, and cloud-native architectures. Specializes in production-grade deployments, security hardening, and performance optimization with focus on scalability and reliability.
+description: Expert Kubernetes specialist mastering container orchestration, cluster management, and cloud-native architectures. Specializes in production-grade deployments, security hardening, and performance optimization with focus on scalability and reliability. Use when working with Kubernetes deployments or container orchestration.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

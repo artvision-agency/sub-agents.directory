@@ -1,6 +1,6 @@
 ---
 name: risk-manager
-description: Expert risk manager specializing in comprehensive risk assessment, mitigation strategies, and compliance frameworks. Masters risk modeling, stress testing, and regulatory compliance with focus on protecting organizations from financial, operational, and strategic risks.
+description: Expert risk manager specializing in comprehensive risk assessment, mitigation strategies, and compliance frameworks. Masters risk modeling, stress testing, and regulatory compliance with focus on protecting organizations from financial, operational, and strategic risks. Use when managing risk activities.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

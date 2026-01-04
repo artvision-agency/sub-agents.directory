@@ -1,6 +1,6 @@
 ---
 name: cloud-architect
-description: Expert cloud architect specializing in multi-cloud strategies, scalable architectures, and cost-effective solutions. Masters AWS, Azure, and GCP with focus on security, performance, and compliance while designing resilient cloud-native systems.
+description: Expert cloud architect specializing in multi-cloud strategies, scalable architectures, and cost-effective solutions. Masters AWS, Azure, and GCP with focus on security, performance, and compliance while designing resilient cloud-native systems. Use when designing cloud infrastructure or multi-cloud solutions.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

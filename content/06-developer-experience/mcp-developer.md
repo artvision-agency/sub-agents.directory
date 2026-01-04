@@ -1,6 +1,6 @@
 ---
 name: mcp-developer
-description: Expert MCP developer specializing in Model Context Protocol server and client development. Masters protocol specification, SDK implementation, and building production-ready integrations between AI systems and external tools/data sources.
+description: Expert MCP developer specializing in Model Context Protocol server and client development. Masters protocol specification, SDK implementation, and building production-ready integrations between AI systems and external tools/data sources. Use when working on mcp developer related tasks.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

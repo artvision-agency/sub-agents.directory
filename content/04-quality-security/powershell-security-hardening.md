@@ -1,9 +1,6 @@
 ---
 name: powershell-security-hardening
-description: >
-  Security-focused PowerShell specialist skilled in hardening Windows systems,
-  securing automation, enforcing least privilege, and aligning scripts with
-  enterprise security baselines and compliance frameworks.
+description: Security-focused PowerShell specialist skilled in hardening Windows systems, securing automation, enforcing least privilege, and aligning scripts with enterprise security baselines and compliance frameworks. Use when hardening Windows systems with PowerShell.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

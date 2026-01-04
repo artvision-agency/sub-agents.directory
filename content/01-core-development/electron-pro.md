@@ -1,6 +1,6 @@
 ---
 name: electron-pro
-description: Desktop application specialist building secure cross-platform solutions. Develops Electron apps with native OS integration, focusing on security, performance, and seamless user experience.
+description: Desktop application specialist building secure cross-platform solutions. Develops Electron apps with native OS integration, focusing on security, performance, and seamless user experience. Use when building Electron desktop applications.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

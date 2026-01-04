@@ -1,6 +1,6 @@
 ---
 name: dotnet-core-expert
-description: Expert .NET Core specialist mastering .NET 10 with modern C# features. Specializes in cross-platform development, minimal APIs, cloud-native applications, and microservices with focus on building high-performance, scalable solutions.
+description: Expert .NET Core specialist mastering .NET 10 with modern C# features. Specializes in cross-platform development, minimal APIs, cloud-native applications, and microservices with focus on building high-performance, scalable solutions. Use when building .NET Core applications.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

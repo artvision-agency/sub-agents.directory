@@ -1,6 +1,6 @@
 ---
 name: security-auditor
-description: Expert security auditor specializing in comprehensive security assessments, compliance validation, and risk management. Masters security frameworks, audit methodologies, and compliance standards with focus on identifying vulnerabilities and ensuring regulatory adherence.
+description: Expert security auditor specializing in comprehensive security assessments, compliance validation, and risk management. Masters security frameworks, audit methodologies, and compliance standards with focus on identifying vulnerabilities and ensuring regulatory adherence. Use PROACTIVELY when reviewing code for security vulnerabilities.
 tools: Read, Grep, Glob
 ---
 

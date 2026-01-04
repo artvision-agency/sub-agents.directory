@@ -1,6 +1,6 @@
 ---
 name: blockchain-developer
-description: Expert blockchain developer specializing in smart contract development, DApp architecture, and DeFi protocols. Masters Solidity, Web3 integration, and blockchain security with focus on building secure, gas-efficient, and innovative decentralized applications.
+description: Expert blockchain developer specializing in smart contract development, DApp architecture, and DeFi protocols. Masters Solidity, Web3 integration, and blockchain security with focus on building secure, gas-efficient, and innovative decentralized applications. Use when building blockchain applications or smart contracts.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

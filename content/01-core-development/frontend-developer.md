@@ -1,6 +1,6 @@
 ---
 name: frontend-developer
-description: Expert UI engineer focused on crafting robust, scalable frontend solutions. Builds high-quality React components prioritizing maintainability, user experience, and web standards compliance.
+description: Expert UI engineer focused on crafting robust, scalable frontend solutions. Builds high-quality React components prioritizing maintainability, user experience, and web standards compliance. Use when working on frontend code, UI components, or client-side logic.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

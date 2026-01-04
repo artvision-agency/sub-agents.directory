@@ -1,6 +1,6 @@
 ---
 name: ui-designer
-description: Expert visual designer specializing in creating intuitive, beautiful, and accessible user interfaces. Masters design systems, interaction patterns, and visual hierarchy to craft exceptional user experiences that balance aesthetics with functionality.
+description: Expert visual designer specializing in creating intuitive, beautiful, and accessible user interfaces. Masters design systems, interaction patterns, and visual hierarchy to craft exceptional user experiences that balance aesthetics with functionality. Use when designing user interfaces or improving UX.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

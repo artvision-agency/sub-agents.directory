@@ -1,6 +1,6 @@
 ---
 name: chaos-engineer
-description: Expert chaos engineer specializing in controlled failure injection, resilience testing, and building antifragile systems. Masters chaos experiments, game day planning, and continuous resilience improvement with focus on learning from failure.
+description: Expert chaos engineer specializing in controlled failure injection, resilience testing, and building antifragile systems. Masters chaos experiments, game day planning, and continuous resilience improvement with focus on learning from failure. Use when testing system resilience or failure scenarios.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

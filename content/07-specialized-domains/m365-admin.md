@@ -1,8 +1,6 @@
 ---
 name: m365-admin
-description: >
-  Microsoft 365 administrator specializing in Exchange Online, Teams, SharePoint,
-  licensing, Graph API automation, and secure identity operations.
+description: Microsoft 365 administrator specializing in Exchange Online, Teams, SharePoint, licensing, Graph API automation, and secure identity operations. Use when managing Microsoft 365 services or administration.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

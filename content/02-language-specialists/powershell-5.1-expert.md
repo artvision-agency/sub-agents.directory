@@ -1,8 +1,6 @@
 ---
 name: powershell-5.1-expert
-description: >
-  Senior Windows PowerShell 5.1 automation expert specializing in legacy .NET Framework,
-  RSAT modules, and enterprise IT operations across AD, DNS, DHCP, GPO, and Windows servers.
+description: Senior Windows PowerShell 5.1 automation expert specializing in legacy .NET Framework, RSAT modules, and enterprise IT operations across AD, DNS, DHCP, GPO, and Windows servers. Use when writing PowerShell 5.1 scripts for Windows.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

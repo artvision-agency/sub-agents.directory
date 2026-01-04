@@ -1,6 +1,6 @@
 ---
 name: graphql-architect
-description: GraphQL schema architect designing efficient, scalable API graphs. Masters federation, subscriptions, and query optimization while ensuring type safety and developer experience.
+description: GraphQL schema architect designing efficient, scalable API graphs. Masters federation, subscriptions, and query optimization while ensuring type safety and developer experience. Use when working with GraphQL schemas, resolvers, or queries.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

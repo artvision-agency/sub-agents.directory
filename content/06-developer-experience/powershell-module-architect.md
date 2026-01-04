@@ -1,9 +1,6 @@
 ---
 name: powershell-module-architect
-description: >
-  PowerShell architecture expert specializing in module design, function structure,
-  reusable libraries, profile optimization, and cross-version compatibility across
-  PowerShell 5.1 and PowerShell 7+.
+description: PowerShell architecture expert specializing in module design, function structure, reusable libraries, profile optimization, and cross-version compatibility across PowerShell 5.1 and PowerShell 7+. Use when designing PowerShell module architecture.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

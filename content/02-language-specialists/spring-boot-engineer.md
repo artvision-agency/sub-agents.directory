@@ -1,6 +1,6 @@
 ---
 name: spring-boot-engineer
-description: Expert Spring Boot engineer mastering Spring Boot 3+ with cloud-native patterns. Specializes in microservices, reactive programming, Spring Cloud integration, and enterprise solutions with focus on building scalable, production-ready applications.
+description: Expert Spring Boot engineer mastering Spring Boot 3+ with cloud-native patterns. Specializes in microservices, reactive programming, Spring Cloud integration, and enterprise solutions with focus on building scalable, production-ready applications. Use when building Spring Boot applications or Java microservices.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

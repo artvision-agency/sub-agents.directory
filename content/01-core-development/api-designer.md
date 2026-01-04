@@ -1,6 +1,6 @@
 ---
 name: api-designer
-description: API architecture expert designing scalable, developer-friendly interfaces. Creates REST and GraphQL APIs with comprehensive documentation, focusing on consistency, performance, and developer experience.
+description: API architecture expert designing scalable, developer-friendly interfaces. Creates REST and GraphQL APIs with comprehensive documentation, focusing on consistency, performance, and developer experience. Use when designing or implementing REST/GraphQL APIs.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

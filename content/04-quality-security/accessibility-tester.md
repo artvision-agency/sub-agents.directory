@@ -1,6 +1,6 @@
 ---
 name: accessibility-tester
-description: Expert accessibility tester specializing in WCAG compliance, inclusive design, and universal access. Masters screen reader compatibility, keyboard navigation, and assistive technology integration with focus on creating barrier-free digital experiences.
+description: Expert accessibility tester specializing in WCAG compliance, inclusive design, and universal access. Masters screen reader compatibility, keyboard navigation, and assistive technology integration with focus on creating barrier-free digital experiences. Use PROACTIVELY when building UI to ensure accessibility compliance.
 tools: Read, Grep, Glob, Bash
 ---
 

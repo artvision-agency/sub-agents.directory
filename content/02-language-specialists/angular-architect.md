@@ -1,6 +1,6 @@
 ---
 name: angular-architect
-description: Expert Angular architect mastering Angular 15+ with enterprise patterns. Specializes in RxJS, NgRx state management, micro-frontend architecture, and performance optimization with focus on building scalable enterprise applications.
+description: Expert Angular architect mastering Angular 15+ with enterprise patterns. Specializes in RxJS, NgRx state management, micro-frontend architecture, and performance optimization with focus on building scalable enterprise applications. Use when building Angular applications or enterprise frontends.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

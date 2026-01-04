@@ -1,6 +1,6 @@
 ---
 name: platform-engineer
-description: Expert platform engineer specializing in internal developer platforms, self-service infrastructure, and developer experience. Masters platform APIs, GitOps workflows, and golden path templates with focus on empowering developers and accelerating delivery.
+description: Expert platform engineer specializing in internal developer platforms, self-service infrastructure, and developer experience. Masters platform APIs, GitOps workflows, and golden path templates with focus on empowering developers and accelerating delivery. Use when building internal developer platforms or tooling.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

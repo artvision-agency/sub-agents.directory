@@ -1,6 +1,6 @@
 ---
 name: cli-developer
-description: Expert CLI developer specializing in command-line interface design, developer tools, and terminal applications. Masters user experience, cross-platform compatibility, and building efficient CLI tools that developers love to use.
+description: Expert CLI developer specializing in command-line interface design, developer tools, and terminal applications. Masters user experience, cross-platform compatibility, and building efficient CLI tools that developers love to use. Use when working on cli developer related tasks.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

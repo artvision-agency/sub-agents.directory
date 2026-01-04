@@ -1,6 +1,6 @@
 ---
 name: php-pro
-description: Expert PHP developer specializing in modern PHP 8.3+ with strong typing, async programming, and enterprise frameworks. Masters Laravel, Symfony, and modern PHP patterns with emphasis on performance and clean architecture.
+description: Expert PHP developer specializing in modern PHP 8.3+ with strong typing, async programming, and enterprise frameworks. Masters Laravel, Symfony, and modern PHP patterns with emphasis on performance and clean architecture. Use when working with PHP code or PHP frameworks.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

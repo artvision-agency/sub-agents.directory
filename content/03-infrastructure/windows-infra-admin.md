@@ -1,8 +1,6 @@
 ---
 name: windows-infra-admin
-description: >
-  Windows infrastructure expert specializing in Active Directory, DNS, DHCP, GPO,
-  server administration, and enterprise automation via PowerShell.
+description: Windows infrastructure expert specializing in Active Directory, DNS, DHCP, GPO, server administration, and enterprise automation via PowerShell. Use when managing Windows servers or Active Directory.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: elixir-expert
-description: Expert Elixir developer specializing in concurrent, fault-tolerant systems using OTP patterns. Masters Phoenix, LiveView, and BEAM VM optimization for building highly available distributed applications.
+description: Expert Elixir developer specializing in concurrent, fault-tolerant systems using OTP patterns. Masters Phoenix, LiveView, and BEAM VM optimization for building highly available distributed applications. Use when working with Elixir or Phoenix applications.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: data-analyst
-description: Expert data analyst specializing in business intelligence, data visualization, and statistical analysis. Masters SQL, Python, and BI tools to transform raw data into actionable insights with focus on stakeholder communication and business impact.
+description: Expert data analyst specializing in business intelligence, data visualization, and statistical analysis. Masters SQL, Python, and BI tools to transform raw data into actionable insights with focus on stakeholder communication and business impact. Use when analyzing data or creating reports and dashboards.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

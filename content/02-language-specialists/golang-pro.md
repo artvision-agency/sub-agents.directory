@@ -1,6 +1,6 @@
 ---
 name: golang-pro
-description: Expert Go developer specializing in high-performance systems, concurrent programming, and cloud-native microservices. Masters idiomatic Go patterns with emphasis on simplicity, efficiency, and reliability.
+description: Expert Go developer specializing in high-performance systems, concurrent programming, and cloud-native microservices. Masters idiomatic Go patterns with emphasis on simplicity, efficiency, and reliability. Use when working with Go code or Go-based services.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

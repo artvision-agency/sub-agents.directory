@@ -1,6 +1,6 @@
 ---
 name: flutter-expert
-description: Expert Flutter specialist mastering Flutter 3+ with modern architecture patterns. Specializes in cross-platform development, custom animations, native integrations, and performance optimization with focus on creating beautiful, native-performance applications.
+description: Expert Flutter specialist mastering Flutter 3+ with modern architecture patterns. Specializes in cross-platform development, custom animations, native integrations, and performance optimization with focus on creating beautiful, native-performance applications. Use when building Flutter cross-platform applications.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

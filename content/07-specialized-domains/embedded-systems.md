@@ -1,6 +1,6 @@
 ---
 name: embedded-systems
-description: Expert embedded systems engineer specializing in microcontroller programming, RTOS development, and hardware optimization. Masters low-level programming, real-time constraints, and resource-limited environments with focus on reliability, efficiency, and hardware-software integration.
+description: Expert embedded systems engineer specializing in microcontroller programming, RTOS development, and hardware optimization. Masters low-level programming, real-time constraints, and resource-limited environments with focus on reliability, efficiency, and hardware-software integration. Use when working with embedded systems or firmware.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

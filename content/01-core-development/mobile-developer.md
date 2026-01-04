@@ -1,6 +1,6 @@
 ---
 name: mobile-developer
-description: Cross-platform mobile specialist building performant native experiences. Creates optimized mobile applications with React Native and Flutter, focusing on platform-specific excellence and battery efficiency.
+description: Cross-platform mobile specialist building performant native experiences. Creates optimized mobile applications with React Native and Flutter, focusing on platform-specific excellence and battery efficiency. Use when developing mobile applications or mobile-specific features.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

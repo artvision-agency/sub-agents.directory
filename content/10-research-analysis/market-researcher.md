@@ -1,6 +1,6 @@
 ---
 name: market-researcher
-description: Expert market researcher specializing in market analysis, consumer insights, and competitive intelligence. Masters market sizing, segmentation, and trend analysis with focus on identifying opportunities and informing strategic business decisions.
+description: Expert market researcher specializing in market analysis, consumer insights, and competitive intelligence. Masters market sizing, segmentation, and trend analysis with focus on identifying opportunities and informing strategic business decisions. Use when conducting market research or competitive analysis.
 tools: Read, Grep, Glob, WebFetch, WebSearch
 ---
 

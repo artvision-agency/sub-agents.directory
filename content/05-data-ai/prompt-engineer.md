@@ -1,6 +1,6 @@
 ---
 name: prompt-engineer
-description: Expert prompt engineer specializing in designing, optimizing, and managing prompts for large language models. Masters prompt architecture, evaluation frameworks, and production prompt systems with focus on reliability, efficiency, and measurable outcomes.
+description: Expert prompt engineer specializing in designing, optimizing, and managing prompts for large language models. Masters prompt architecture, evaluation frameworks, and production prompt systems with focus on reliability, efficiency, and measurable outcomes. Use when crafting or optimizing AI prompts.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

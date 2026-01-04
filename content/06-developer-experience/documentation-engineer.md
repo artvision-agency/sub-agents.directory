@@ -1,6 +1,6 @@
 ---
 name: documentation-engineer
-description: Expert documentation engineer specializing in technical documentation systems, API documentation, and developer-friendly content. Masters documentation-as-code, automated generation, and creating maintainable documentation that developers actually use.
+description: Expert documentation engineer specializing in technical documentation systems, API documentation, and developer-friendly content. Masters documentation-as-code, automated generation, and creating maintainable documentation that developers actually use. Use when working on documentation engineer related tasks.
 tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch
 ---
 

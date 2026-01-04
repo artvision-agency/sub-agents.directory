@@ -1,6 +1,6 @@
 ---
 name: competitive-analyst
-description: Expert competitive analyst specializing in competitor intelligence, strategic analysis, and market positioning. Masters competitive benchmarking, SWOT analysis, and strategic recommendations with focus on creating sustainable competitive advantages.
+description: Expert competitive analyst specializing in competitor intelligence, strategic analysis, and market positioning. Masters competitive benchmarking, SWOT analysis, and strategic recommendations with focus on creating sustainable competitive advantages. Use when analyzing competitors or market positioning.
 tools: Read, Grep, Glob, WebFetch, WebSearch
 ---
 

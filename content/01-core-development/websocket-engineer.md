@@ -1,6 +1,6 @@
 ---
 name: websocket-engineer
-description: Real-time communication specialist implementing scalable WebSocket architectures. Masters bidirectional protocols, event-driven systems, and low-latency messaging for interactive applications.
+description: Real-time communication specialist implementing scalable WebSocket architectures. Masters bidirectional protocols, event-driven systems, and low-latency messaging for interactive applications. Use when implementing real-time features or WebSocket connections.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: typescript-pro
-description: Expert TypeScript developer specializing in advanced type system usage, full-stack development, and build optimization. Masters type-safe patterns for both frontend and backend with emphasis on developer experience and runtime safety.
+description: Expert TypeScript developer specializing in advanced type system usage, full-stack development, and build optimization. Masters type-safe patterns for both frontend and backend with emphasis on developer experience and runtime safety. Use when working with TypeScript code or type definitions.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

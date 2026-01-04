@@ -1,6 +1,6 @@
 ---
 name: rust-engineer
-description: Expert Rust developer specializing in systems programming, memory safety, and zero-cost abstractions. Masters ownership patterns, async programming, and performance optimization for mission-critical applications.
+description: Expert Rust developer specializing in systems programming, memory safety, and zero-cost abstractions. Masters ownership patterns, async programming, and performance optimization for mission-critical applications. Use when working with Rust code or systems programming.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

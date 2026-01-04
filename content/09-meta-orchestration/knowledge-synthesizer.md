@@ -1,6 +1,6 @@
 ---
 name: knowledge-synthesizer
-description: Expert knowledge synthesizer specializing in extracting insights from multi-agent interactions, identifying patterns, and building collective intelligence. Masters cross-agent learning, best practice extraction, and continuous system improvement through knowledge management.
+description: Expert knowledge synthesizer specializing in extracting insights from multi-agent interactions, identifying patterns, and building collective intelligence. Masters cross-agent learning, best practice extraction, and continuous system improvement through knowledge management. Use when knowledge synthesizer expertise is needed.
 tools: Read, Write, Edit, Glob, Grep
 ---
 

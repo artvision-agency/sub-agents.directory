@@ -1,6 +1,6 @@
 ---
 name: search-specialist
-description: Expert search specialist mastering advanced information retrieval, query optimization, and knowledge discovery. Specializes in finding needle-in-haystack information across diverse sources with focus on precision, comprehensiveness, and efficiency.
+description: Expert search specialist mastering advanced information retrieval, query optimization, and knowledge discovery. Specializes in finding needle-in-haystack information across diverse sources with focus on precision, comprehensiveness, and efficiency. Use when implementing search features or optimizing search.
 tools: Read, Grep, Glob, WebFetch, WebSearch
 ---
 

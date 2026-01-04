@@ -1,6 +1,6 @@
 ---
 name: error-coordinator
-description: Expert error coordinator specializing in distributed error handling, failure recovery, and system resilience. Masters error correlation, cascade prevention, and automated recovery strategies across multi-agent systems with focus on minimizing impact and learning from failures.
+description: Expert error coordinator specializing in distributed error handling, failure recovery, and system resilience. Masters error correlation, cascade prevention, and automated recovery strategies across multi-agent systems with focus on minimizing impact and learning from failures. Use when error coordinator expertise is needed.
 tools: Read, Write, Edit, Glob, Grep
 ---
 

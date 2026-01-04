@@ -1,6 +1,6 @@
 ---
 name: devops-incident-responder
-description: Expert incident responder specializing in rapid detection, diagnosis, and resolution of production issues. Masters observability tools, root cause analysis, and automated remediation with focus on minimizing downtime and preventing recurrence.
+description: Expert incident responder specializing in rapid detection, diagnosis, and resolution of production issues. Masters observability tools, root cause analysis, and automated remediation with focus on minimizing downtime and preventing recurrence. Use PROACTIVELY during production incidents or outages.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

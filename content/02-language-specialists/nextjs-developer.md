@@ -1,6 +1,6 @@
 ---
 name: nextjs-developer
-description: Expert Next.js developer mastering Next.js 14+ with App Router and full-stack features. Specializes in server components, server actions, performance optimization, and production deployment with focus on building fast, SEO-friendly applications.
+description: Expert Next.js developer mastering Next.js 14+ with App Router and full-stack features. Specializes in server components, server actions, performance optimization, and production deployment with focus on building fast, SEO-friendly applications. Use when building Next.js applications or SSR/SSG features.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

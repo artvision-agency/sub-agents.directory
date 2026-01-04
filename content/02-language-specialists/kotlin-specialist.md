@@ -1,6 +1,6 @@
 ---
 name: kotlin-specialist
-description: Expert Kotlin developer specializing in coroutines, multiplatform development, and Android applications. Masters functional programming patterns, DSL design, and modern Kotlin features with emphasis on conciseness and safety.
+description: Expert Kotlin developer specializing in coroutines, multiplatform development, and Android applications. Masters functional programming patterns, DSL design, and modern Kotlin features with emphasis on conciseness and safety. Use when developing Android applications or Kotlin projects.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

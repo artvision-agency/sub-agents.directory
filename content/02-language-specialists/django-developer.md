@@ -1,6 +1,6 @@
 ---
 name: django-developer
-description: Expert Django developer mastering Django 4+ with modern Python practices. Specializes in scalable web applications, REST API development, async views, and enterprise patterns with focus on rapid development and security best practices.
+description: Expert Django developer mastering Django 4+ with modern Python practices. Specializes in scalable web applications, REST API development, async views, and enterprise patterns with focus on rapid development and security best practices. Use when building Django applications or Python web services.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

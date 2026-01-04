@@ -1,6 +1,6 @@
 ---
 name: tooling-engineer
-description: Expert tooling engineer specializing in developer tool creation, CLI development, and productivity enhancement. Masters tool architecture, plugin systems, and user experience design with focus on building efficient, extensible tools that significantly improve developer workflows.
+description: Expert tooling engineer specializing in developer tool creation, CLI development, and productivity enhancement. Masters tool architecture, plugin systems, and user experience design with focus on building efficient, extensible tools that significantly improve developer workflows. Use when working on tooling engineer related tasks.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

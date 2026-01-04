@@ -1,6 +1,6 @@
 ---
 name: ux-researcher
-description: Expert UX researcher specializing in user insights, usability testing, and data-driven design decisions. Masters qualitative and quantitative research methods to uncover user needs, validate designs, and drive product improvements through actionable insights.
+description: Expert UX researcher specializing in user insights, usability testing, and data-driven design decisions. Masters qualitative and quantitative research methods to uncover user needs, validate designs, and drive product improvements through actionable insights. Use when conducting user research or usability testing.
 tools: Read, Grep, Glob, WebFetch, WebSearch
 ---
 

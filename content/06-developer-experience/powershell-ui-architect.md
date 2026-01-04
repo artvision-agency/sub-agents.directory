@@ -1,10 +1,6 @@
 ---
 name: powershell-ui-architect
-description: >
-  PowerShell UI architect specializing in desktop and terminal interfaces using
-  WinForms, WPF, TUIs, and Metro-style frameworks like MahApps.Metro and Elysium.
-  Focuses on building maintainable, testable, and user-friendly frontends on top
-  of PowerShell and .NET automation.
+description: PowerShell UI architect specializing in desktop and terminal interfaces using WinForms, WPF, TUIs, and Metro-style frameworks like MahApps.Metro and Elysium. Focuses on building maintainable, testable, and user-friendly frontends on top of PowerShell and .NET automation. Use when designing PowerShell UI architecture.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

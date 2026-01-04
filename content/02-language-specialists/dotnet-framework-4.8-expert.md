@@ -1,6 +1,6 @@
 ---
 name: dotnet-framework-4.8-expert
-description: Expert .NET Framework 4.8 specialist mastering legacy enterprise applications. Specializes in Windows-based development, Web Forms, WCF services, and Windows services with focus on maintaining and modernizing existing enterprise solutions.
+description: Expert .NET Framework 4.8 specialist mastering legacy enterprise applications. Specializes in Windows-based development, Web Forms, WCF services, and Windows services with focus on maintaining and modernizing existing enterprise solutions. Use when maintaining .NET Framework 4.8 applications.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

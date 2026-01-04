@@ -1,6 +1,6 @@
 ---
 name: microservices-architect
-description: Distributed systems architect designing scalable microservice ecosystems. Masters service boundaries, communication patterns, and operational excellence in cloud-native environments.
+description: Distributed systems architect designing scalable microservice ecosystems. Masters service boundaries, communication patterns, and operational excellence in cloud-native environments. Use when designing or implementing microservices architecture.
 tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 

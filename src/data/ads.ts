@@ -12,7 +12,7 @@ export const ads: Ad[] = [
   {
     id: "placeholder-1",
     title: "Your Brand Here",
-    description: "Reach developers building with Claude Code. Advertise on sub-agents.directory.",
+    description: "Reach developers building with Claude Code.",
     logoUrl: "/claude-logo.svg",
     imageUrl: "/sub-agents.directory.png",
     link: "/advertise",
@@ -20,8 +20,7 @@ export const ads: Ad[] = [
   {
     id: "placeholder-2",
     title: "Sponsor This Space",
-    description:
-      "Get your product in front of 10,000+ developers monthly. Contact us to advertise.",
+    description: "Get your product in front of 100K+ developers monthly.",
     logoUrl: "/claude-logo.svg",
     imageUrl: "/sub-agents.directory.png",
     link: "/advertise",

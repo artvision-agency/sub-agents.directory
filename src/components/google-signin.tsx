@@ -22,10 +22,7 @@ export function GoogleSignin() {
         });
       }}
     >
-      <span className="flex items-center gap-2">
-        {/* <GoogleIcon className="w-4 h-4" /> */}
-        Sign in with Google
-      </span>
+      <span className="flex items-center gap-2">Sign in with Google</span>
     </Button>
   );
 }

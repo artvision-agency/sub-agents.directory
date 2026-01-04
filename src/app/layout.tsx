@@ -78,10 +78,7 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: [
-    // { media: "(prefers-color-scheme: light)" },
-    { media: "(prefers-color-scheme: dark)" },
-  ],
+  themeColor: [{ media: "(prefers-color-scheme: dark)" }],
 };
 
 export default function RootLayout({
@@ -99,7 +96,6 @@ export default function RootLayout({
       )}
     >
       <head>
-        {/* Preconnect to external resources for faster loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.youtube.com" />

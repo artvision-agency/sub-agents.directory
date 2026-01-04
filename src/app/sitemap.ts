@@ -7,7 +7,6 @@ const BASE_URL = "https://sub-agents.directory";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sections = getSections();
 
-  // Base routes with static pages
   const routes: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
@@ -47,7 +46,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // Add routes for each rule
   for (const section of sections) {
     for (const rule of section.rules) {
       routes.push({
@@ -59,7 +57,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
-  // Add routes for each MCP server (using slugify to match page routes)
   const mcpData = (await import("@/data/mcp")).default;
   for (const mcp of mcpData) {
     routes.push({

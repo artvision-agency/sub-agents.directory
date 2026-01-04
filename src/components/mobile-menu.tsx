@@ -12,7 +12,6 @@ const navigationLinks = [
   { href: "/agents", label: "Agents" },
   { href: "/mcp", label: "MCPs" },
   { href: "/learn", label: "Learn" },
-  // { href: "/advertise", label: "Advertise" },
   { href: "/about", label: "About" },
 ] as const;
 

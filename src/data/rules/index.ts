@@ -19,7 +19,6 @@ export type Section = {
   slug: string;
 };
 
-// Category folder name to display name mapping
 const categoryMappings: Record<string, string> = {
   "01-core-development": "Core Development",
   "02-language-specialists": "Language Specialists",
@@ -33,9 +32,6 @@ const categoryMappings: Record<string, string> = {
   "10-research-analysis": "Research & Analysis",
 };
 
-/**
- * Convert kebab-case slug to Title Case
- */
 function slugToTitle(slug: string): string {
   return slug
     .split("-")
@@ -121,11 +117,9 @@ export function getRelatedRules(slug: string, limit = 4): Rule[] {
     .filter((rule) => rule.slug !== slug)
     .map((rule) => {
       let score = 0;
-      // Same category gets highest priority
       if (rule.tags.some((tag) => currentTags.includes(tag))) {
         score += 10;
       }
-      // Shared tools add to relevance
       const sharedLibs = rule.libs.filter((lib) => currentLibs.has(lib)).length;
       score += sharedLibs * 2;
       return { rule, score };

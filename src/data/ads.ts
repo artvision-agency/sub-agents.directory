@@ -7,7 +7,6 @@ export interface Ad {
   imageUrl: string;
 }
 
-// Placeholder ads - replace with real sponsors when you have them
 export const ads: Ad[] = [
   {
     id: "placeholder-1",

@@ -15,10 +15,7 @@ export function isImageUrl(url: string): boolean {
     imageExtensions.includes(url.substring(url.lastIndexOf(".")).toLowerCase()) ||
     url.endsWith(".svg");
 
-  // Add check for GitHub avatar URLs
   const isGitHubAvatar = url.includes("avatars.githubusercontent.com");
-
-  // Add check for URLs with 'image' in the path or query parameters
   const hasImageInUrl = url.toLowerCase().includes("image");
 
   return isDataUri || isImageExtension || isGitHubAvatar || hasImageInUrl;
@@ -32,18 +29,14 @@ export function generateNameAbbr(name: string): string {
   return match ? match[0].toUpperCase() : "";
 }
 
-/**
- * Clean markdown content for use in meta descriptions.
- * Removes code blocks, inline code, links, and markdown formatting.
- */
 export function cleanDescription(content: string, maxLength = 155): string {
   return content
-    .replace(/```[\s\S]*?```/g, "") // Remove code blocks
-    .replace(/`[^`]+`/g, "") // Remove inline code
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Convert links to text
-    .replace(/[#*_~>-]/g, "") // Remove markdown formatting
-    .replace(/\n+/g, " ") // Replace newlines with spaces
-    .replace(/\s+/g, " ") // Collapse whitespace
+    .replace(/```[\s\S]*?```/g, "")
+    .replace(/`[^`]+`/g, "")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[#*_~>-]/g, "")
+    .replace(/\n+/g, " ")
+    .replace(/\s+/g, " ")
     .trim()
     .slice(0, maxLength);
 }

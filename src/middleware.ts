@@ -3,7 +3,6 @@ import { type NextRequest, NextResponse } from "next/server";
 export function middleware(_request: NextRequest) {
   const response = NextResponse.next();
 
-  // Security headers
   response.headers.set("X-DNS-Prefetch-Control", "on");
   response.headers.set("X-Frame-Options", "SAMEORIGIN");
   response.headers.set("X-Content-Type-Options", "nosniff");
@@ -13,7 +12,6 @@ export function middleware(_request: NextRequest) {
     "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   );
 
-  // Content Security Policy
   const csp = [
     "default-src 'self'",
     "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://scripts.simpleanalyticscdn.com",

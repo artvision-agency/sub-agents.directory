@@ -19,7 +19,6 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
   const [isMounted, setIsMounted] = useState(false);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Memoize random ads to prevent re-randomization on every render
   const randomAds = useMemo(() => {
     const adsMap: Record<string, (typeof ads)[0]> = {};
     sections.forEach((section, sectionIndex) => {
@@ -68,7 +67,6 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
     return () => window.removeEventListener("hashchange", scrollToHash);
   }, [sections, visibleItems]);
 
-  // Memoize filtered sections to prevent recalculation on every render
   const filteredSections = useMemo(() => {
     const searchLower = search?.toLowerCase() || "";
     return sections
@@ -85,7 +83,6 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
   }, [sections, search]);
 
   const handleScroll = useCallback(() => {
-    // Debounce scroll events
     if (scrollTimeoutRef.current) {
       clearTimeout(scrollTimeoutRef.current);
     }

@@ -8,14 +8,18 @@ import { toast } from "sonner";
 export function ShareButton({ slug, small }: { slug: string; small?: boolean }) {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(`${window.location.origin}/${slug}`);
-    setCopied(true);
-    toast("URL copied to clipboard");
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(`${window.location.origin}/${slug}`);
+      setCopied(true);
+      toast("URL copied to clipboard");
 
-    setTimeout(() => {
-      setCopied(false);
-    }, 1000);
+      setTimeout(() => {
+        setCopied(false);
+      }, 1000);
+    } catch {
+      toast.error("Failed to copy to clipboard");
+    }
   };
 
   return (
@@ -26,6 +30,7 @@ export function ShareButton({ slug, small }: { slug: string; small?: boolean }) 
         small ? "p-1.5 size-7" : "p-2 size-9",
       )}
       type="button"
+      aria-label={copied ? "Link copied" : "Share link"}
     >
       {copied ? (
         <Check className={small ? "w-3 h-3" : "w-4 h-4"} />

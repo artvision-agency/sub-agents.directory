@@ -1,3 +1,4 @@
+import { cleanDescription } from "@/lib/utils";
 import type { Rule } from "@/data/rules/types";
 
 const BASE_URL = "https://sub-agents.directory";
@@ -88,23 +89,11 @@ interface RuleJsonLdProps {
 }
 
 export function RuleJsonLd({ rule, datePublished, dateModified }: RuleJsonLdProps) {
-  const cleanDescription = (content: string): string => {
-    return content
-      .replace(/```[\s\S]*?```/g, "")
-      .replace(/`[^`]+`/g, "")
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-      .replace(/[#*_~>-]/g, "")
-      .replace(/\n+/g, " ")
-      .replace(/\s+/g, " ")
-      .trim()
-      .slice(0, 160);
-  };
-
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: rule.title,
-    description: rule.description || cleanDescription(rule.content),
+    description: rule.description || cleanDescription(rule.content, 160),
     url: `${BASE_URL}/${rule.slug}`,
     image: `${BASE_URL}/cover-image.png`,
     datePublished: datePublished || "2024-01-01T00:00:00Z",

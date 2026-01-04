@@ -3,23 +3,12 @@ import { Menu } from "@/components/menu";
 import { RelatedRules } from "@/components/related-rules";
 import { RuleCard } from "@/components/rule-card";
 import { getRelatedRules, getRuleBySlug, getSections, rules } from "@/data/rules";
+import { cleanDescription } from "@/lib/utils";
 import type { Metadata } from "next";
 
 const BASE_URL = "https://sub-agents.directory";
 
 type Params = Promise<{ slug: string }>;
-
-function cleanDescription(content: string): string {
-  return content
-    .replace(/```[\s\S]*?```/g, "")
-    .replace(/`[^`]+`/g, "")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-    .replace(/[#*_~>-]/g, "")
-    .replace(/\n+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 155);
-}
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { slug } = await params;

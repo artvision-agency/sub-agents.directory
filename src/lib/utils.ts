@@ -31,3 +31,19 @@ export function generateNameAbbr(name: string): string {
 
   return match ? match[0].toUpperCase() : "";
 }
+
+/**
+ * Clean markdown content for use in meta descriptions.
+ * Removes code blocks, inline code, links, and markdown formatting.
+ */
+export function cleanDescription(content: string, maxLength = 155): string {
+  return content
+    .replace(/```[\s\S]*?```/g, "") // Remove code blocks
+    .replace(/`[^`]+`/g, "") // Remove inline code
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Convert links to text
+    .replace(/[#*_~>-]/g, "") // Remove markdown formatting
+    .replace(/\n+/g, " ") // Replace newlines with spaces
+    .replace(/\s+/g, " ") // Collapse whitespace
+    .trim()
+    .slice(0, maxLength);
+}

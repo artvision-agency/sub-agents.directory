@@ -8,37 +8,33 @@ import { Button } from "@/components/ui/button";
 import { ads } from "@/data/ads";
 import type { Section } from "@/data/rules/types";
 import { useQueryState } from "nuqs";
-import { Fragment, useCallback, useEffect, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const ITEMS_PER_PAGE = 6;
+const SCROLL_DEBOUNCE_MS = 150;
 
 export function RuleList({ sections, small }: { sections: Section[]; small?: boolean }) {
-  const [search, setSearch] = useQueryState("q");
+  const [search] = useQueryState("q");
   const [visibleItems, setVisibleItems] = useState(ITEMS_PER_PAGE);
-  const [randomAds, setRandomAds] = useState<Record<string, (typeof ads)[0]>>({});
   const [isMounted, setIsMounted] = useState(false);
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Memoize random ads to prevent re-randomization on every render
+  const randomAds = useMemo(() => {
+    const adsMap: Record<string, (typeof ads)[0]> = {};
+    sections.forEach((section, sectionIndex) => {
+      section.rules.forEach((_, ruleIndex) => {
+        const position = `${sectionIndex}-${ruleIndex}`;
+        const randomIndex = Math.floor(Math.random() * ads.length);
+        adsMap[position] = ads[randomIndex];
+      });
+    });
+    return adsMap;
+  }, [sections]);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
-  useEffect(() => {
-    setRandomAds((prev) => {
-      const newRandomAds: Record<string, (typeof ads)[0]> = {};
-      sections.forEach((section, sectionIndex) => {
-        section.rules.forEach((_, ruleIndex) => {
-          const position = `${sectionIndex}-${ruleIndex}`;
-          if (!prev[position]) {
-            const randomIndex = Math.floor(Math.random() * ads.length);
-            newRandomAds[position] = ads[randomIndex];
-          } else {
-            newRandomAds[position] = prev[position];
-          }
-        });
-      });
-      return newRandomAds;
-    });
-  }, [sections]);
 
   useEffect(() => {
     setVisibleItems(ITEMS_PER_PAGE);
@@ -72,36 +68,56 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
     return () => window.removeEventListener("hashchange", scrollToHash);
   }, [sections, visibleItems]);
 
-  const filteredSections = sections
-    .map((section) => ({
-      ...section,
-      rules: section.rules.filter(
-        (rule) =>
-          !search ||
-          rule.title.toLowerCase().includes(search.toLowerCase()) ||
-          rule.content.toLowerCase().includes(search.toLowerCase()),
-      ),
-    }))
-    .filter((section) => section.rules.length > 0);
+  // Memoize filtered sections to prevent recalculation on every render
+  const filteredSections = useMemo(() => {
+    const searchLower = search?.toLowerCase() || "";
+    return sections
+      .map((section) => ({
+        ...section,
+        rules: section.rules.filter(
+          (rule) =>
+            !search ||
+            rule.title.toLowerCase().includes(searchLower) ||
+            rule.content.toLowerCase().includes(searchLower),
+        ),
+      }))
+      .filter((section) => section.rules.length > 0);
+  }, [sections, search]);
 
   const handleScroll = useCallback(() => {
-    const bottom =
-      Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight;
-
-    if (bottom && visibleItems < filteredSections.length) {
-      setVisibleItems((prev) => Math.min(prev + ITEMS_PER_PAGE, filteredSections.length));
+    // Debounce scroll events
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
     }
+
+    scrollTimeoutRef.current = setTimeout(() => {
+      const bottom =
+        Math.ceil(window.innerHeight + window.scrollY) >=
+        document.documentElement.scrollHeight - 100;
+
+      if (bottom && visibleItems < filteredSections.length) {
+        setVisibleItems((prev) => Math.min(prev + ITEMS_PER_PAGE, filteredSections.length));
+      }
+    }, SCROLL_DEBOUNCE_MS);
   }, [visibleItems, filteredSections.length]);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+    };
   }, [handleScroll]);
 
-  const getRandomAd = (sectionIndex: number, ruleIndex: number) => {
-    const position = `${sectionIndex}-${ruleIndex}`;
-    return randomAds[position] || ads[0];
-  };
+  const getRandomAd = useCallback(
+    (sectionIndex: number, ruleIndex: number) => {
+      const position = `${sectionIndex}-${ruleIndex}`;
+      return randomAds[position] || ads[0];
+    },
+    [randomAds],
+  );
 
   let totalItemsCount = 0;
 
@@ -109,11 +125,14 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
     return (
       <div className="flex justify-center items-center h-full">
         <div className="flex-col gap-4 flex items-center">
-          <p className="text-[#878787] text-sm">No rules found</p>
+          <p className="text-muted-foreground text-sm">No rules found</p>
+          <p className="text-muted-foreground/60 text-xs text-center max-w-xs">
+            Try a different search term or browse categories from the menu
+          </p>
           <Button
             variant="outline"
             className="mt-2 border-border rounded-full"
-            onClick={() => setSearch(null)}
+            onClick={() => window.history.pushState({}, "", window.location.pathname)}
           >
             Clear search
           </Button>
@@ -167,7 +186,7 @@ export function RuleList({ sections, small }: { sections: Section[]; small?: boo
             onClick={() =>
               setVisibleItems((prev) => Math.min(prev + ITEMS_PER_PAGE, filteredSections.length))
             }
-            className="px-4 py-2 text-sm text-[#878787]"
+            className="px-4 py-2 text-sm text-muted-foreground"
           >
             Loading more...
           </button>

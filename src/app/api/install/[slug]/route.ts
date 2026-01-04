@@ -5,6 +5,16 @@ export const revalidate = 86400;
 
 const VALID_SLUG_PATTERN = /^[a-z0-9-]+$/;
 
+/**
+ * Sanitize a string for safe use in bash scripts.
+ * Escapes single quotes and wraps in single quotes.
+ */
+function sanitizeForBash(str: string): string {
+  // Replace single quotes with escaped version and wrap in single quotes
+  // This is the safest way to handle arbitrary strings in bash
+  return `'${str.replace(/'/g, "'\\''")}'`;
+}
+
 export async function generateStaticParams() {
   return rules.map((rule) => ({
     slug: rule.slug,
@@ -49,7 +59,7 @@ cleanup() {
 }
 trap cleanup EXIT
 
-echo "Installing ${rule.title} agent..."
+echo "Installing ${sanitizeForBash(rule.title)} agent..."
 
 mkdir -p "$AGENT_DIR"
 

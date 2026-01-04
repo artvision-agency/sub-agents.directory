@@ -17,24 +17,28 @@ export function DownloadButton({
   const [downloaded, setDownloaded] = useState(false);
 
   const handleDownload = () => {
-    const blob = new Blob([content], { type: "text/markdown" });
-    const url = URL.createObjectURL(blob);
+    try {
+      const blob = new Blob([content], { type: "text/markdown" });
+      const url = URL.createObjectURL(blob);
 
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `${filename}.md`;
-    document.body.appendChild(a);
-    a.click();
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${filename}.md`;
+      document.body.appendChild(a);
+      a.click();
 
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
 
-    setDownloaded(true);
-    toast("Rule downloaded. Add to your .claude/ directory or CLAUDE.md file.");
+      setDownloaded(true);
+      toast("Rule downloaded. Add to your .claude/ directory or CLAUDE.md file.");
 
-    setTimeout(() => {
-      setDownloaded(false);
-    }, 1000);
+      setTimeout(() => {
+        setDownloaded(false);
+      }, 1000);
+    } catch {
+      toast.error("Failed to download file");
+    }
   };
 
   return (
@@ -45,6 +49,7 @@ export function DownloadButton({
         small ? "p-1.5 size-7" : "p-2 size-9",
       )}
       type="button"
+      aria-label={downloaded ? "Downloaded" : "Download file"}
     >
       {downloaded ? (
         <Check className={small ? "w-3 h-3" : "w-4 h-4"} />

@@ -41,7 +41,7 @@ export function OrganizationJsonLd() {
     name: "Sub-Agents Directory",
     description: "The largest directory of Claude Code sub-agent prompts and MCP servers",
     url: BASE_URL,
-    logo: `${BASE_URL}/claude-logo.svg`,
+    logo: `${BASE_URL}/claude-logo.png`,
     sameAs: ["https://github.com/VoltAgent/awesome-claude-code-subagents"],
   };
 
@@ -109,7 +109,7 @@ export function RuleJsonLd({ rule, datePublished, dateModified }: RuleJsonLdProp
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/claude-logo.svg`,
+        url: `${BASE_URL}/claude-logo.png`,
       },
     },
     mainEntityOfPage: {

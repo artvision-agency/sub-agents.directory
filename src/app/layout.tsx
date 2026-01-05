@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      url: "/claude-logo.svg",
-      type: "image/svg+xml",
+      url: "/claude-logo.png",
+      type: "image/png",
     },
   ],
   manifest: "/manifest.json",

@@ -12,7 +12,7 @@ const banners = [
     href: "/advertise",
     logo: (
       <Image
-        src="/claude-logo.svg"
+        src="/claude-logo.png"
         alt="Advertise"
         className="absolute left-4 top-5"
         width={32}
@@ -27,7 +27,7 @@ const banners = [
     href: "/advertise",
     logo: (
       <Image
-        src="/claude-logo.svg"
+        src="/claude-logo.png"
         alt="Advertise"
         className="absolute left-4 top-5"
         width={32}

@@ -23,7 +23,7 @@ export default function Page() {
         <div className="w-full max-w-6xl mx-auto">
           <h1 className="sr-only">Sub-Agents Directory - Find Claude Code Sub-Agent Prompts</h1>
           <div className="flex justify-center mb-6">
-            <Image src="/claude-logo.svg" alt="Claude AI" width={64} height={64} priority />
+            <Image src="/claude-logo.png" alt="Claude AI" width={64} height={64} priority />
           </div>
           <GlobalSearch sections={sections} />
         </div>

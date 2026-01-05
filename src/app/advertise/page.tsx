@@ -25,6 +25,18 @@ export default function Advertise() {
               decision-makers who are actively building with Claude Code and looking for ways to
               improve their development workflow.
             </p>
+            <p className="text-[#878787] leading-relaxed text-sm mt-4">
+              View our{" "}
+              <a
+                href="https://dashboard.simpleanalytics.com/sub-agents.directory"
+                className="text-primary border-border border-dashed border-b-[1px]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                public analytics dashboard
+              </a>{" "}
+              for real-time traffic stats.
+            </p>
           </section>
 
           <section>

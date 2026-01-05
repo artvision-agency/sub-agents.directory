@@ -54,7 +54,13 @@ export default function MCPList() {
                 className="px-6 py-2 text-sm rounded-[8px] font-medium whitespace-nowrap flex items-center gap-2 border border-border"
               >
                 {mcp.logo && (
-                  <Image src={mcp.logo} alt={`${mcp.name} logo`} width={16} height={16} />
+                  <Image
+                    src={mcp.logo}
+                    alt={`${mcp.name} logo`}
+                    width={16}
+                    height={16}
+                    className="h-4 w-4 object-contain"
+                  />
                 )}
                 <span className="pr-4">{mcp.name}</span>
               </Link>

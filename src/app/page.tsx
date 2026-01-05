@@ -2,7 +2,6 @@ import { GlobalSearch } from "@/components/global-search";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/json-ld";
 import { getSections } from "@/data/rules";
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Sub-Agents Directory - Claude Code Sub-Agents & MCP Servers",
@@ -23,7 +22,18 @@ export default function Page() {
         <div className="w-full max-w-6xl mx-auto">
           <h1 className="sr-only">Sub-Agents Directory - Find Claude Code Sub-Agent Prompts</h1>
           <div className="flex justify-center mb-6">
-            <Image src="/claude-logo.png" alt="Claude AI" width={64} height={64} priority />
+            <a
+              href="https://peerlist.io/shydev69/project/subagentsdirectory"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://peerlist.io/api/v1/projects/embed/PRJHOK89D8AEPQBK9IGAPBA8BEMPDO?showUpvote=false&theme=dark"
+                alt="sub-agents.directory"
+                className="h-[72px] w-auto"
+              />
+            </a>
           </div>
           <GlobalSearch sections={sections} />
         </div>
